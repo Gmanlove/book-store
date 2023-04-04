@@ -1,17 +1,20 @@
+/* eslint-disable */
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   categories: [],
+  message: '',
 };
 
 const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   reducers: {
-    getStatus: () => 'Under construction',
+    checkStatus: (state) => {
+      state.message = 'Under construction';
+    },
   },
 });
 
-export const { getStatus } = categoriesSlice.actions;
-
+export const { checkStatus } = categoriesSlice.actions;
 export default categoriesSlice.reducer;
