@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { postBookToApi } from '../redux/books/booksSlice';
 
-const BooksAdd = () => {
+const BookAdd = () => {
   const initialInputs = {
     title: '',
     author: '',
@@ -17,17 +17,15 @@ const BooksAdd = () => {
       [e.target.name]: e.target.value,
     }));
   };
-
-  const handleSubmit = (e) => {
+  const handleClick = (e) => {
     e.preventDefault();
     const id = uuidv4();
     const book = { id, ...input };
-    dispatch(addBook(book));
+    dispatch(postBookToApi(book));
     setInputs(initialInputs);
   };
-
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleClick}>
       <input
         type="text"
         onChange={handleChange}
@@ -42,11 +40,11 @@ const BooksAdd = () => {
         value={input.author}
         placeholder="author"
       />
-      <button type="submit">
+      <button type="submit" onClick={handleClick}>
         Add Book
       </button>
     </form>
   );
 };
 
-export default BooksAdd;
+export default BookAdd;
