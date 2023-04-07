@@ -93,13 +93,13 @@ button[type='submit'] {
 }
 
 .L-Panel {
-  align-items: center;
   margin: 2rem auto;
-  width: 85%;
   padding: 2rem 4rem 1.625rem;
   border-radius: 4px;
   border: solid 1px var(--white);
   background-color: var(--white-two);
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .container {
@@ -172,7 +172,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 5%;
+  margin-left: -5%;
 }
 
 .book-ions {
@@ -273,15 +273,14 @@ ul {
 }
 
 .Line {
-  width: 79%;
   border: solid 1px var(--white);
-  margin-left: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .form-container {
-  width: 79%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .form-title {
