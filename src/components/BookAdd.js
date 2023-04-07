@@ -26,22 +26,10 @@ const BookAdd = () => {
   };
   return (
     <form onSubmit={handleClick}>
-      <input
-        type="text"
-        onChange={handleChange}
-        name="title"
-        value={input.title}
-        placeholder="title"
-      />
-      <input
-        type="text"
-        name="author"
-        onChange={handleChange}
-        value={input.author}
-        placeholder="author"
-      />
+      <input type="text" onChange={handleChange} name="title" value={input.title} placeholder="Title of Book" />
+      <input type="text" name="author" onChange={handleChange} value={input.author} placeholder="Author of Book" />
       <button type="submit" onClick={handleClick}>
-        Add Book
+        ADD BOOK
       </button>
     </form>
   );
