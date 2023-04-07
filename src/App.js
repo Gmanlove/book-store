@@ -6,7 +6,7 @@ import './App.css';
 
 const App = () => (
   <Router>
-    <div>
+    <div className="love">
       <Header />
     </div>
     <Routes>
