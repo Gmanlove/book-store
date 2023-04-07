@@ -7,7 +7,7 @@ import { getBooksData } from '../redux/books/booksSlice';
 const ListOfBooks = () => {
   const {
     books, isLoading, error, ifSuccess,
-  } = useSelector((state) => state.book);
+  } = useSelector((store) => store.book);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,20 +21,13 @@ const ListOfBooks = () => {
       </div>
     );
   }
-
-  if (error) {
-    return <h2>An error has occurred</h2>;
-  }
-
-  if (books.length === 0) {
-    return <h2>Add your books</h2>;
-  }
-
-  return (
-    <div>
-      {books.map((book) => <Books key={book.id} book={book} />)}
+  if (error) return <h2>An error has occured</h2>;
+  if (books.length === 0) return <h2>there are no books</h2>;
+  return books.map((book) => (
+    <div key={book.id} className="L-Panel">
+      <Books key={book.id} book={book} />
     </div>
-  );
+  ));
 };
 
 export default ListOfBooks;

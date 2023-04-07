@@ -1,6 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
 body {
   margin: 0;
-  font-family: cursive;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f6fa;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-two);
+}
+
+.heading-nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 8%;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--Montserrat);
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  opacity: 0.5;
+}
+
+form {
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+input {
+  width: 40%;
+  padding: 1rem 0.5rem;
+  border-radius: 2px;
+  border: solid 1px var(--white);
+  background-color: var(--white-two);
+  font-size: 1rem;
+  font-family: var(--Montserrat);
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: var(--very-light-pink);
+}
+
+button[type='submit'] {
+  width: 10%;
+  background-color: var(--azure);
+  border: none;
+  font-family: var(--RobotoSlab);
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
+}
+
+.active {
+  opacity: 1;
+}
+
+.Bookstores {
+  padding-left: 3rem;
+  font-family: var(--Montserrat);
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.L-Panel {
+  margin: 2rem auto;
+  padding: 2rem 4rem 1.625rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: var(--white-two);
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.new-cat {
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: var(--Montserrat);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.onye {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  font-family: var(--RobotoSlab);
+}
+
+.odide {
+  margin: 0;
+  font-family: var(--RobotoSlab);
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+}
+
+.mind-off,
+.delete,
+.set-to {
+  font-family: var(--RobotoSlab);
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.book-Card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -5%;
+}
+
+.book-ions {
+  width: 40%;
+}
+
+.progressing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.P-Complete {
+  font-family: var(--Montserrat);
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.offLine-2 {
+  width: 0.125rem;
+  height: 1.5rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px var(--white);
+}
+
+.Line-4 {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px var(--white);
+}
+
+.progressing-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Done {
+  margin: 0;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: var(--white-two);
+}
+
+.chapters {
+  margin-right: 4rem;
+}
+
+.C-Chapter {
+  font-family: var(--RobotoSlab);
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.circular {
+  margin-right: 12%;
+}
+
+.C-Lesson {
+  font-family: var(--RobotoSlab);
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Up-progress {
+  font-family: var(--RobotoSlab);
+  padding: 0.8em 1.4rem;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
+  border-radius: 3px;
+  background-color: var(--azure);
+  border: none;
+}
+
+.Line {
+  border: solid 1px var(--white);
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.form-container {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.form-title {
+  font-family: var(--Montserrat);
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
 }
 
 .load-ing {
@@ -15,8 +306,8 @@ body {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 150px;
+  height: 150px;
   margin: 8px;
   border: 8px solid #fff;
   border-radius: 50%;
@@ -44,4 +335,17 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --Montserrat: 'Montserrat', sans-serif;
+  --RobotoSlab: 'Roboto Slab', serif;
+  --azure: #0290ff;
+  --z: #fafafa;
+  --white: #e8e8e8;
+  --white-two: #fff;
+  --cool-blue: #4386bf;
+  --very-light-pink: #c4c4c4;
+
+  align-items: center;
 }
